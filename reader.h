@@ -51,6 +51,7 @@ class Reader
 {
 public:
     Reader();
+     Reader(string filename);
     ~Reader();
     //get
     vector<string> reader();
@@ -63,6 +64,7 @@ private:
     Section0 sec0;
     Section1 sec1;
     QFile file;
+    ofstream outfile;
 };
 
 
