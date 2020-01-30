@@ -9,6 +9,10 @@ Reader::Reader()
     }
     reader.readSec0();
 }
+Reader::Reader(string filename)
+{
+    file.open(filename,ios::b inary);
+}
 Reader::~Reader(){
     //close
 }
